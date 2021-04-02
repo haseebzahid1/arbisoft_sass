@@ -1,0 +1,108 @@
+.django{
+    max-width: 1126px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 20px;
+    width: 100%;
+    margin-top: 70px;
+    &__inner-flex{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        @include respond(phone-2){
+            flex-direction: column;
+        }
+    }
+    &__right-div{
+        width: 56%;
+        flex: 0 0 56%;
+        padding-left: 15px;
+
+        @include respond( tab-port-1){
+            width: 71%;
+            flex-basis: 0 0 67%;
+            
+        }
+        @include respond(phone-2){
+           
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        h2{
+            font-size: 30px;
+            margin: 0 0 15px;color: #5497da;
+            font-weight: 400;
+        }
+        p{
+            font-size: 15px;
+            color: #555555;
+            margin: 0 0 15px;
+        }
+        a{
+            display: block;
+            color: #5497da;
+            font-size: 15px;
+        }
+    }
+    &__left-div{
+         width: 44%;
+         flex: 0 0 44%;
+         text-align: center;
+         @include respond( tab-land-6){
+            width: 29%;
+            flex-basis: 0 0 33%;
+        }
+
+         @include respond(phone-2){
+            width: 100%;
+        }
+         img{
+            vertical-align: middle;
+            max-width: 422px;
+            @include respond(tab-land-6){
+                max-width: 366.33px;
+            }
+            @include respond( tab-port-1){
+                max-width: 271.59px;
+            }
+           
+            @include respond(phone-2){
+                max-width: 422px;
+            }
+         }
+    }
+}
+.container{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.select{
+    position: relative;
+    
+    line-height: 3em;
+    border: 1px solid red;
+    border-radius: 50px;
+}
+select{
+    width: 300px;
+    height: 3em;
+    // flex: 1;
+    padding: 0 .5em;
+    color:red ;
+    cursor: pointer;
+}
+.select::after{
+    content: '\25bc';
+    position: absolute;
+    top: 0;
+    right:  0;
+    pointer-events:none ;
+    background-color: silver;
+}

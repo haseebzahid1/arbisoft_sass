@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto&display=swap");
+
+
+
+@import "abstracts/function";
+@import "abstracts/mixins";
+@import "abstracts/variable";
+
+
+
+// @import "layout/navigation";
+
+
+@import "layout/flex";
+
+
+
+@import "sass/ulilities";
+
+
+@import "component/bg-vedio";
+@import "component/card";
+@import "component/button";
+
+
+@import "page/home";
+@import "page/media";
+@import "page/animation";
+@import "page/feature-box";
+@import "page/black-white";
+@import "page/countown";
+@import "page/django";
+@import "page/_form-container";
+@import "page/_slick";
+@import "page/collapse";
+@import "page/conversion";
+
+
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/footer";
+
+

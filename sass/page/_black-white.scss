@@ -1,0 +1,141 @@
+.black-white{
+    margin-top: 80px;
+    text-align: center;
+    @include respond(tab-land-2){
+        margin-top: 40px;
+    }
+    &__h22{
+        font-size: 25px;
+        color: #5497da;
+        margin: 0 0 15px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-top: 80px;
+    }
+    &__span2{
+        font-size:$font-size-3;
+        line-height: 1.8;
+        color: #555555;
+        display: block;
+        @include respond(tab-land-2){
+            line-height: 1.4;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include respond(phone-1){
+            justify-content: flex-start;
+        }
+    }
+    &__margin{
+        margin-top: 60px;
+        
+        @include respond(tab-land-2){
+            margin-top: 20px;
+        }
+    max-width: 1146px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    // padding-top: 35px;
+    
+
+    min-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    // background-color: rgb(0, 119, 255);
+    }
+   
+    &__img-box{
+        max-width: 20%;
+        flex: 0 0 20%;
+        // border: 1px solid red;
+        padding: 35px 0px 0;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        // transition: 0.3s ease 0s;
+        @include respond(phone-1){
+            max-width: 50%;
+            flex: 0 0 50%;
+        }
+        
+       
+       
+    }
+    &__2d-img{
+        width: 110.13px;
+        filter: grayscale(100%);
+        &:hover{
+            filter: grayscale(0%);
+        }
+        @include respond(tab-land-1){
+            width: 84.8px;
+        }
+        @include respond(tab-port-1){
+            width: 76.16px;
+        }
+        @include respond(phone-1){
+            width: 184px;
+        }
+       
+    }
+    &__3d-img{
+        width: 86.13px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+       
+        &:hover{
+            transition: filter 0.8s ease 0.2s;
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            
+        }
+        @include respond(tab-land-1){
+            width: 66.3px;
+        }
+        @include respond(tab-port-1){
+            width: 65.27px;
+        }
+        
+    }
+   
+    &__img-content{
+        position: relative;
+        display: inline-flex;
+    }
+    &__img-content-2{
+        position: relative;
+        display: inline-flex;
+        margin-top: -1rem;
+    }
+    &__img-hover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        &:hover{
+            opacity: 1;
+            transition: 0.3s ease 0s;
+        }
+      
+   }
+
+}
+
+
+// <div class="collapse-main__according " id="allCall">
+
+// <div class="collapse-main__button-mb">
+// <button class="btn btn-primary " data-toggle="collapse"data-target="#demo0">Click  one</button>
+// <button class="btn btn-primary" data-toggle="collapse"data-target="#demo1">Click tow</button>
+// <button class="btn btn-primary " data-toggle="collapse"data-target="#demo2">Click three</button>
+// </div>
+// <div id="demo0" class="collapse show" data-parent="#allCall">
+
+
+// </div>
+
+// </div>

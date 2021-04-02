@@ -1,0 +1,137 @@
+
+.slick-inner{
+    max-width: 1226px;
+    margin-top: 80px;
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    // text-align: center;
+    overflow: hidden;
+    @include respond(phone){
+        margin-top: 50px;
+    }
+   &__h22{
+       color: #5497da;
+       font-size: 29px;
+       font-weight: 400;
+       margin-bottom: 4rem;
+   }
+   &__a2{
+    color: #5497da;
+    margin-top: 2.9rem;
+    display: block;
+    
+   }
+    &__md-12{
+        width: 100%;
+        margin: 0 0.7rem;
+        height: 40vh;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+    }
+
+    &__md-12:hover:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 1;
+    }
+    &__md-12:hover &__img{
+        transform: scale(1.2);
+    }
+    &__img{
+        width: 100%;
+        transform: scale(1);
+        transition: all 0.5s ease ;
+        
+    }
+    &__md-12 &__hover-img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+        opacity: 0;
+    }
+    &__md-12:hover &__hover-img{
+        opacity: 1;
+    }
+    &__back-img{
+        // transform: translateX(0.7rem);
+        max-width: 100px;
+        img{
+            width: 100%;
+           
+        }
+    }
+    &__h1{
+        margin-top: 14px;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 26px;
+        font-weight: 400;
+    }
+}
+
+.slick-inner-padding{
+    padding:0 30px;
+}
+.slick-inner{
+    &__slick-d-flex{
+        display: flex;
+        @include respond(phone-1){
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        
+    }
+    &__slick-content{
+        padding: 0 60px 0 20px;
+        // border: 1px solid red;
+        @include respond(phone-1){
+            // margin-top: 1.4rem;
+            padding: 0 30px 0 20px;
+        }
+    }
+    &__slick-img{
+        max-width: 234.69px;
+        margin-bottom: 2rem;
+        // border: 1px solid red;
+      
+        display: block;
+        @include respond(phone-1){
+            max-width: 402px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__slick-back-img{
+        width: 100%;
+    }
+    &__slick-h22{
+        font-size: 20px;
+        color: #000;
+        // font-weight: 400;
+    }
+    &__slick-span{
+        font-size: 15px;
+        display: block;
+        margin: 0 0 15px;
+        color: #555;
+        font-weight: 600;
+    }
+    &__slick-p{
+        font-size: 17px;
+        color: #555;
+    }
+}
+
+
+

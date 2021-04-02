@@ -1,0 +1,136 @@
+
+
+.count{
+    
+    min-height: 30px;
+    max-width: 1126px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    line-height: 35px;
+    @include respond(tab-land-2){
+        margin-top: 85px;
+    }
+    @include respond(phone){
+        margin-top: 50px;
+    }
+   
+    &__vendor{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+    &__box{
+        flex: 0 0 18%;
+        width: 18%;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2%);
+        padding: 60px 20px;
+        border: 1px solid rgba(128, 128, 128, .2);
+        width: calc(20% - 20px);
+        margin: 10px;
+      
+      
+        @include respond(tab-land-5){
+            flex: 0 0 30%;
+            width: 30%;
+           
+        }
+        @include respond(phone-2){
+            flex: 0 0 43%;
+            width: 43%;
+            margin: 8px;
+        }
+       
+        @include respond(tab-land-4){
+            padding: 35px 15px;
+        }
+        
+    }
+    &__box .fa{
+        color: #5497da;
+        margin-bottom: 0.9rem;
+        display: block;
+    }
+    span{
+       
+        font-size: 40px;
+    }
+
+    &__text span{
+        font-size: 40px;
+        position: relative;
+    }
+    &__text .text-span{
+        color: #5497da;
+    }
+    &__text p{
+        font-size: 13px;
+        color: #555555;
+        padding: 0;
+        margin: 0;
+        margin-top: -0.7rem;
+    }
+}
+
+
+.carousel-main{
+    margin-top: 80px;
+    min-height: 30px;
+    max-width: 1126px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px 0 30px;
+    width: 100%;
+    position: relative;
+    @include respond(tab-land-2){
+        margin-top: 40px;
+    }
+    &__slider-flex{
+        display: flex;
+        @include respond(phone-2){
+
+            flex-direction: column;
+        }
+    }
+    &__img{
+        max-width: 23%;
+        flex: 0 0 23%;
+        display: inline;
+        img{
+         height:169px;
+          width: 100%;
+        }
+       
+    }
+    &__card-body{
+        margin: 1% 10% 20px 2%;
+        
+        @include respond(phone){
+            margin-top: 1rem;
+        }
+       
+        h1{
+            font-size: 20px;
+            color: #000;
+            line-height: 30px;
+            font-weight: 400;
+            letter-spacing: 0px;
+        }
+        span{
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 0 25px;
+            display: block;
+            color: #444;
+        }
+        p{
+            font-size: 17px;
+            margin: 0 0 20px;
+            color: #555;
+        }
+    }
+}

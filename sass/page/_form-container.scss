@@ -1,0 +1,92 @@
+.form-container{
+    max-width: 1126px;
+    margin-left: auto;
+    margin-right: auto;
+    // border: 1px solid red;
+    min-height: 20px;
+    width: 100%;
+    margin-top: 70px;
+  
+    h2{
+        font-size: 22px;
+        color: #5497da;
+        font-weight: 400;
+        text-align: center;
+        line-height: 20px;
+        margin:0 0 40px 0;
+    }
+    &__form-flex{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 57px;
+       justify-content: space-between;
+        // border: 1px solid red;
+       @include respond(phone-2){
+           margin-bottom: 40px;
+       }
+       
+    }
+    
+    &__flex-content{
+        display: flex;
+       
+        flex: 0 0 49%;
+        width: 49%;
+        height: 65px;
+        @include respond(phone-2){
+            width: 100%;
+            flex: 0 0 100%;
+            height: 45px;
+            line-height: 45px;
+           
+              
+            
+        }
+        // line-height: 65px;
+        input{
+            border: 1px solid #979797;
+            outline: none;
+            width: 100%;
+            height: 100%;
+            padding: 5px 15px;
+            // margin-top: 1rem;
+            
+        }
+        input:focus{
+            background-color: #E9F5FC;
+        }
+    }
+    &__select{
+        height: 65px;
+        width: 100%;
+        color: black;
+        display: block;
+        @include respond(phone-2){
+           
+           
+            height: 45px;
+           
+           
+              
+            
+        }
+    }
+    &__flex-textarea{
+        width: 100%;
+        flex: 0 0 100%;
+        textarea {
+            width: 100%;
+            padding: 0.7rem;
+        }
+    }
+}
+
+
+.display-block{
+    display: block;
+}
+@include respond(phone-2){
+    .mmt{
+        margin-top: 3.3rem;
+   }
+}

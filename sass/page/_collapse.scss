@@ -1,0 +1,149 @@
+.collapse-main{
+    max-width: 1126px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 20px;
+    width: 100%;
+    margin-top: 85px;
+
+    @include respond(tab-land-6){
+        padding-left:60px;
+        padding-right: 60px;
+      }
+    @include respond(phone-1){
+        padding-left:40px;
+        padding-right: 40px;
+      }
+ 
+    &__according{
+        flex-direction: column;
+        display: inline-block;
+
+    }
+    &__button-mb{
+        margin-bottom: 2.3rem;
+    }
+   
+    &__rows-2{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        box-shadow: inset 0 0 0 1px #c4c4c4;
+        position: relative;
+        border-radius: 25px;
+      
+    }
+    &__height{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 50%;
+        height: 100%;
+        border: 1px solid #c4c4c4;
+
+        @include respond(phone-1){
+            display: none;
+        }
+    }
+
+    &__contents{
+        max-width: 50%;
+        flex: 0 0 50%;
+        padding: 30px 35px 30px 35px;
+        position: relative;
+        // border: 1px solid red;
+
+        @include respond(tab-port){
+           
+            padding-right: 10px;
+            padding-left: 15px;
+       
+            }
+        @include respond(phone-1){
+          
+           max-width: 100%;
+           flex: 0 0 100%;
+            }
+
+            h1{
+                font-size: 20px;
+                margin: 0 0 20px;
+                color: #000;
+            }
+            p{
+                font-size: 15px;
+                color: #555;
+                margin: 0;
+            }
+    }
+     &__contents-2{
+        position: relative;
+      
+     }
+    &__contents-2:before,
+    &__contents-3:before{
+        
+        content: '';
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        width: 90%;
+        border: 1px solid #c4c4c4;
+    }
+    &__contents-3:before{
+        @include respond(phone-1-min){
+            display: none;
+        }
+    }
+   &__collapse-btn{
+       display: block;
+       cursor: pointer;
+       margin: 15px 0 0 ;
+       text-decoration: none;
+      &:hover{
+          color: #000;
+      }
+   }
+   &__small-flex{
+        display: flex;
+        position: relative;
+      
+        @include respond(zero-size){
+            flex-direction: column;
+        }
+    
+   }
+
+   &__small-flex:hover &__icon44{
+    transform: translateY(-5px);
+    
+   }
+   &__icon44{
+        margin: 0 16px;
+        color: #5497da;
+        transform: translateY(0);
+        transition: all 0.3s ease ;
+    
+        @include respond(zero-size){
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+      span{
+          display: block;
+          font-size: 80px;
+      }
+   }
+  
+   &__margin-left{
+       padding-left: 60px;
+       @include respond(tab-land-6){
+        padding-left:40px;
+      }
+       @include respond(zero-size){
+           margin-top: 1rem;
+           padding-left: 0;
+    }
+   }
+}
+
